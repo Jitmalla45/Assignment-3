@@ -24,7 +24,8 @@ Necessary Includes:
 <string.h>: Provides the strlen function used to calculate the length of the string.
 
 Function Prototypes:
-reverse_substring: Declares the function for reversing a substring of a given string.
-find_next_start: Declares the function to find the start index of the next word in the string.
-find_next_end: Declares the function to find the end index of the current word in the string.
-reverse_words: Declares the function to reverse all words in the given string.*/
+Explanation:
+reverse_substring: Reverses a substring of the input string.
+find_next_start: Finds the index of the start of the next word.
+find_next_end: Finds the index past the end of the current word.
+reverse_words: Iterates through the string, reverses each word individually, and skips over non-alphabetic characters.*/
