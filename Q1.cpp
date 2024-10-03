@@ -1,21 +1,21 @@
-#include <ctype.h>
+#include <ctype.h> 
 #include <string.h>
 #include <iostream>
 #include "reverse.h"
 
 void reverse_substring(char str[], int start, int end) {
-	while (start < end) {
-		char temp = str[start];
-		str[start] = str[end];
-		str[end] = temp;
-		start++;
-		end--;
-	}
+    while (start < end) {
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+        start++;
+        end--;
+    }
 }
 
 int find_next_start(char str[], int len, int i) {
-	while (i < len && !isalpha(str[i])) i++;
-	return (i < len) ? i : -1;
+    while (i < len && !isalpha(str[i])) i++;
+    return (i < len) ? i : -1;
 }
 
 int find_next_end(char str[], int len, int i) {
@@ -35,10 +35,10 @@ void reverse_words(char s[]) {
     }
 }
 
-
 int main() {
     char str[] = "University of Cambridge!";
     reverse_words(str);
     std::cout << str << std::endl; // Output: "ytisrevinU fo egdirbmaC!"
+    
     return 0;
 }
